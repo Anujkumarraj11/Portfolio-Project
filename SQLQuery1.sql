@@ -114,6 +114,7 @@ where de.continent is not null
 )
 select *,( RollingPeopleVaccinated/Population)*100 as per_vaccinated
 from popVsvac
+ 
 -- Using Temp Table to perform Calculation on Partition By in previous query
 DROP Table if exists #PercentPopulationVaccinated
 Create Table #PercentPopulationVaccinated
